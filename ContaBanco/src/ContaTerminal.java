@@ -9,7 +9,7 @@ public class ContaTerminal {
      * @throws Exception
      */
     public static void main(String[] args)  {
-          try (Scanner texto = new Scanner(System.in)) {
+          try (Scanner dadosUsuario = new Scanner(System.in)) {
             int numero;
             String agencia;
             String nomeCliente;
@@ -17,17 +17,17 @@ public class ContaTerminal {
            
         
             System.out.println("Por favor, digite o número da sua conta!");
-            numero = texto.nextInt();
-            texto.nextLine();
+            numero = dadosUsuario.nextInt();
+            dadosUsuario.nextLine();
 
             System.out.println("Por favor, digite o número da Agência!");
-            agencia = texto.nextLine();
+            agencia = dadosUsuario.nextLine();
            
             System.out.println("Por favor, digite seu nome!");
-            nomeCliente  = texto.nextLine();
+            nomeCliente  = dadosUsuario.nextLine();
             
             System.out.println("Por favor, digite o valor que deseja depositar!");
-            saldo = texto.nextDouble();
+            saldo = dadosUsuario.nextDouble();
             
             System.out.println("Olá " +nomeCliente+ " obrigado por criar uma conta em nosso banco, sua agência é " +agencia+ ", conta  " +numero+ "  e seu saldo  " +saldo+ "  já está disponível para saque.");
             
